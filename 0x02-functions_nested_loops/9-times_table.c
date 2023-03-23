@@ -23,7 +23,7 @@ for (i = 0; i <= 9; i++)
 		_putchar((res % 10) + '0');
 	}
 	_putchar(',');
-	_putchar(' ');
+	_putchar('\t');
 	}
 	_putchar('\n');
 }
