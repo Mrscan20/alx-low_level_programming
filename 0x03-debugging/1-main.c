@@ -11,9 +11,9 @@ int i;
 
 printf("Infinite loop incoming :(\n");
 
-i = 0;
+i = 10;
 
-while (i > 10)
+while (i < 10)
 {
 putchar(i); /* part causing the infinte loop for not increment i */
 }
