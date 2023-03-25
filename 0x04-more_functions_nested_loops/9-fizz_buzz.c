@@ -25,7 +25,13 @@ for (i = 1; i <= 100; i++)
 	{
 	printf("%d ", i);
 	}
+	if (i == 100)
+	{
+	continue;
+	}
+	printf(" ");
 }
+
 printf("\n");
 return (0);
 }
