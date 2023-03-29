@@ -17,7 +17,7 @@ while (s[i] != '\0')
 	i = i;
 	i++;
 	}
-for (j = i; j >= 0; j--)
+for (j = i - 1 ; j >= 0; j--)
 	printf("%c", s[j]);
 printf("\n");
 }
