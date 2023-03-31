@@ -1,1 +1,0 @@
-learn programming low level.
