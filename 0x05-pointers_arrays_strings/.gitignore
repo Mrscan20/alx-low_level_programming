@@ -16,6 +16,7 @@ _putchar.c
 7-main.c
 8-squares
 8-main.c
+9-main.c
 10-triangles
 10-main.c 
 101-main.c
@@ -31,3 +32,4 @@ _putchar.c
 6-puts2
 7-puts_half
 8-print_array
+9-strcpy
