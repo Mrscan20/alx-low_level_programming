@@ -14,7 +14,6 @@ while (*(str + i) != '\0')
 	{
 	i++;
 	}
-printf("%d", i);
 if (i % 2 == 0)
 	for (j = (i / 2); *(str + j) != '\0'; j++)
 		printf("%c", *(str + j));
