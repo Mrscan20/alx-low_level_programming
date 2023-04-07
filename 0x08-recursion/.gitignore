@@ -19,7 +19,8 @@ _putchar.c
 8-squares
 8-main.c
 10-triangles
-10-main.c 
+10-main.c
+100-main.c 
 101-main.c
 101-print_numbers
 
@@ -44,3 +45,5 @@ _putchar.c
 4-pow
 5-sqrt 
 6-prime
+100-palindrome 
+101-wildcmp 
