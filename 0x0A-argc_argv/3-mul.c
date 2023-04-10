@@ -5,7 +5,7 @@
 /**
  * main - Entry point.
  * @argc: number of argument passed into it.
- * @agrv: pointer to an array filled with argument passed.
+ * @argv: pointer to an array
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
