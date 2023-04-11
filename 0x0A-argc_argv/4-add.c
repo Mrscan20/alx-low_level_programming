@@ -11,26 +11,20 @@
  */
 int main(int argc, char *argv[])
 {
-int i;
-int res= 0;
-if (argc == 1)
+int i, j, res = 0;
+
+for (i = 1; i < argc; i++)
+{
+	for (j = 0; argv[i][j] != '\0'; j++)
 	{
-		printf("0\n");
-	return (0);
-	}
-else
-	{
-	for (i = 0; i < argc; i++)
-	{	
-			if (*argv[i] >= 0 && ! isdigit(*argv[i]))
-			res = res + atoi(argv[i]);
-		else
+		if (!isdigit(argv[i][j]))
 		{
 			printf("Error\n");
 			return (1);
 		}
 	}
-	printf("%d\n", res);
-	return (0);
-	}
+	res = res + atoi(argv[i]);
+}
+printf("%d\n", res);
+return (0);
 }
