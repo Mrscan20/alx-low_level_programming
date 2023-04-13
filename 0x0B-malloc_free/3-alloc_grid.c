@@ -15,7 +15,6 @@ int **alloc_grid(int width, int height)
 
 	if (width < 1 || height < 1)
 		return (NULL);
-
 	gout = malloc(height * sizeof(int *));
 	if (gout == NULL)
 	{
@@ -29,15 +28,13 @@ int **alloc_grid(int width, int height)
 		if (gout[i] == NULL)
 		{
 			for (i--; i >= 0; i--)
-			free(gout[i]);
+				free(gout[i]);
 			free(gout);
 			return (NULL);
 		}
 	}
-
 	for (i = 0; i < height; i++)
 		for (j = 0; j < width; j++)
 			gout[i][j] = 0;
-
 	return (gout);
 }
