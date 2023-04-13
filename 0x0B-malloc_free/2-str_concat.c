@@ -14,6 +14,14 @@ char *p;
 unsigned int i, j, count, counts2;
 unsigned int size;
 
+if (s1 == NULL)
+	{	
+	s1 = "";
+	}
+if (s2 == NULL)
+	{
+	s2 = "";
+	}
 for (i = 0; *(s1 + i) != '\0'; i++)
 	;
 for (j = 0; *(s2 + j) != '\0'; j++)
@@ -26,25 +34,13 @@ if (p == NULL)
 	return (NULL);
 	}
 for (count = 0; count < i; count++)
-	if (s1 == NULL)
-	{	
-		s1 = "";
-		break;
-	}
-	else
-		p[count] = s1[count];
+	p[count] = s1[count];
 counts2 = 0;
 for (count = i; count < size; count++)
-	if (s2 == NULL)
-	{
-		s2 = "";
-		break;
-	}
-	else
 	{
 		p[count] = s2[counts2];
 		counts2++;
 	}
-p[size] = '\0';
+/**p[size] = '\0';**/
 return (p);
 }
