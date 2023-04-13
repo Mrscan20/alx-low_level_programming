@@ -14,7 +14,7 @@ unsigned int i;
 
 if (size == 0)
 	return ('\0');
-ar = malloc(sizeof(int) * size);
+ar = malloc(sizeof(c) * size);
 for (i = 0; i < size; i++)
 	ar[i] = c;
 if (sizeof(ar))
