@@ -23,13 +23,24 @@ p = malloc(sizeof(char) * size);
 if (p == NULL)
 	return (NULL);
 for (count = 0; count < i; count++)
-	p[count] = s1[count];
-counts2 = 0;
-/**printf("%d  %d   %d",i,j,size);**/
-for (count = i; count < size; count++)
+	if (*s1 == '\0')
 	{
-	p[count] = s2[counts2];
-	counts2++;
+		s1 = "";
+		break;
+	}
+	else
+		p[count] = s1[count];
+counts2 = 0;
+for (count = i; count < size; count++)
+	if (*s2 == '\0')
+	{
+		s2 = "";
+		break;
+	}
+	else
+	{
+		p[count] = s2[counts2];
+		counts2++;
 	}
 p[size] = '\0';
 return (p);
