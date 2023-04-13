@@ -13,7 +13,7 @@ char *ar;
 unsigned int i;
 
 if (size == 0)
-	return ('\0');
+	return (NULL);
 ar = malloc(sizeof(c) * size);
 for (i = 0; i < size; i++)
 	ar[i] = c;
