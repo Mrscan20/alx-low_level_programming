@@ -17,5 +17,8 @@ if (size == 0)
 ar = malloc(sizeof(int) * size);
 for (i = 0; i < size; i++)
 	ar[i] = c;
-return (ar);
+if (sizeof(ar))
+	return (ar);
+else
+	return (NULL);
 }
