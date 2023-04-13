@@ -21,10 +21,13 @@ for (j = 0; *(s2 + j) != '\0'; j++)
 size = i + j + 1;
 p = malloc(sizeof(char) * size);
 if (p == NULL)
-	return (NULL);
-for (count = 0; count < i; count++)
-	if (*s1 == '\0')
 	{
+	free(p);
+	return (NULL);
+	}
+for (count = 0; count < i; count++)
+	if (s1 == NULL)
+	{	
 		s1 = "";
 		break;
 	}
@@ -32,7 +35,7 @@ for (count = 0; count < i; count++)
 		p[count] = s1[count];
 counts2 = 0;
 for (count = i; count < size; count++)
-	if (*s2 == '\0')
+	if (s2 == NULL)
 	{
 		s2 = "";
 		break;
