@@ -15,7 +15,7 @@ unsigned int i, j, count, counts2;
 unsigned int size;
 
 if (s1 == NULL)
-	{	
+	{
 	s1 = "";
 	}
 if (s2 == NULL)
@@ -38,9 +38,8 @@ for (count = 0; count < i; count++)
 counts2 = 0;
 for (count = i; count < size; count++)
 	{
-		p[count] = s2[counts2];
-		counts2++;
+	p[count] = s2[counts2];
+	counts2++;
 	}
-/**p[size] = '\0';**/
 return (p);
 }
